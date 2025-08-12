@@ -2,6 +2,8 @@ import React from "react";
 import LoginForm from "../../components/auth/LoginForm";
 import { Link } from "react-router-dom";
 
+import login from "../../assets/Login.png";
+
 const Login = () => {
   return (
     <main className="h-screen w-full bg-white">
@@ -57,7 +59,7 @@ const Login = () => {
         {/* Right: Decorative panel */}
         <aside className="hidden bg-white md:block">
           <img
-            src="/src/assets/Login.png"
+            src={login}
             alt="الشعار"
             className="h-screen w-full object-cover"
           />

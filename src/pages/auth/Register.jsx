@@ -1,6 +1,8 @@
 import React from "react";
 import RegisterForm from "../../components/auth/RegisterForm";
 import { Link } from "react-router-dom";
+import logo from "../../assets/Logo.png";
+
 
 const Register = () => {
   return (
@@ -16,7 +18,7 @@ const Register = () => {
           {/* Brand */}
           <div className="flex items-center justify-start gap-3">
             <img
-              src="/src/assets/Logo.png"
+              src={logo}
               alt="الشعار"
               className="h-10 w-10 rounded-sm"
             />

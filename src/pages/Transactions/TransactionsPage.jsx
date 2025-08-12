@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CurrencyExchange from "../../components/Transactions/CurrencyExchange";
 import TransferMethods from "../../components/Transactions/TransferMethods";
 import ArabicForm from "../../components/Transactions/ArabicForm";
+import logo from "../../assets/Logo.png";
 
 const stepsCount = 3;
 
@@ -11,7 +12,7 @@ const TransactionsPage = () => {
   return (
     <div className="container mx-auto px-6 py-6">
       <div className="flex items-center justify-end px-16">
-        <img src="./src/assets/Logo.png" alt="img" className="w-14 h-14 object-cover " />
+        <img src={logo} alt="img" className="w-14 h-14 object-cover " />
       </div>
       {/* Steps progress bar */}
       <div className="relative flex items-center justify-between w-full mx-auto px-16">
