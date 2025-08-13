@@ -7,3 +7,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}

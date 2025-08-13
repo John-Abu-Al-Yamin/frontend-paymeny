@@ -28,6 +28,7 @@
     "react-select": "^5.10.2",
     "react-select-country-list": "^2.2.3",
     "sonner": "^2.0.7",
+    "swiper": "^11.2.10",
     "tailwindcss": "^4.1.11",
     "world-countries": "^5.1.0",
     "yup": "^1.7.0",

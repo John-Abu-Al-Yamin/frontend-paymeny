@@ -8,11 +8,17 @@ import {
 import RootLayout from "./components/RootLayout";
 import Register from "./pages/auth/Register";
 import Login from "./pages/auth/Login";
-import UserId from "./pages/Home/UserId";
 import Home from "./pages/Home/Home";
 import RequireAuth from "./components/auth/RequireAuth";
 import Cookies from "js-cookie";
 import TransactionsPage from "./pages/Transactions/TransactionsPage";
+import DashboardUser from "./pages/DashboardUser/DashboardUser";
+import DashboardMain from "./components/DashboardUser/DashboardMain";
+import PreviousTransactions from "./components/DashboardUser/PreviousTransactions";
+import ExchangeRates from "./components/DashboardUser/ExchangeRates";
+import Account from "./components/DashboardUser/Account";
+import NewOrder from "./components/DashboardUser/NewOrder";
+import Help from "./components/DashboardUser/Help";
 
 export default function App() {
   const accessToken = Cookies.get("accessToken");
@@ -39,13 +45,20 @@ export default function App() {
           />
         </Route>
         <Route
-          path="user/:id"
+          path="dashboard-user"
           element={
             <RequireAuth>
-              <UserId />
+              <DashboardUser />
             </RequireAuth>
           }
-        />
+        >
+          <Route index element={<DashboardMain />} />
+          <Route path="previous-transactions" element={<PreviousTransactions />} />
+          <Route path="exchange-rates" element={<ExchangeRates />} />
+          <Route path="account" element={<Account />} />
+          <Route path="new-order" element={<NewOrder />} />
+          <Route path="help" element={<Help />} />
+        </Route>
 
         {/* Home */}
         <Route
