@@ -18,7 +18,7 @@ const Login = () => {
           {/* Brand */}
           <div className="flex items-center justify-start gap-3">
             <img
-              src="/src/assets/Logo.png"
+              src={login}
               alt="الشعار"
               className="h-10 w-10 rounded-sm"
             />

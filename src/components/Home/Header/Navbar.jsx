@@ -1,5 +1,6 @@
 import { Globe, Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "../../../assets/Logo.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ const Navbar = () => {
           {/* Logo - Right side */}
           <div className="flex items-center">
             <img
-              src="/src/assets/Logo.png"
+              src={logo}
               alt="الشعار"
               className="h-16 w-16 object-cover"
             />
