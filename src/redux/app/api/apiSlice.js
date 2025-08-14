@@ -3,7 +3,8 @@ import Cookies from "js-cookie";
 
 export const baseQuery = fetchBaseQuery({
   // baseUrl: "http://localhost:5000",
-  baseUrl: "https://payment-backend-prh3.onrender.com",
+  // baseUrl: "https://payment-backend-prh3.onrender.com",
+  baseUrl: "https://payment-backend-1-wz8e.onrender.com",
   credentials: "include",
   prepareHeaders: (headers) => {
     const token = Cookies.get("accessToken");
