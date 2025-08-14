@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Home, CreditCard, Wallet, Banknote } from "lucide-react";
 import ImageUpload from "../ImageUpload";
+import image from "./../../assets/image-1.png";
 
 const TransferMethods = ({setStep}) => {
   const [selectedMethod, setSelectedMethod] = useState("");
@@ -17,7 +18,7 @@ const TransferMethods = ({setStep}) => {
       <div className="flex flex-col lg:flex-row">
         {/* Left side - Illustration */}
         <div className="hidden lg:flex lg:w-1/2 p-8 items-center justify-center">
-          <img src="./src/assets/image-1.png" alt="" />
+          <img src={image} alt="" />
         </div>
 
         {/* Right side - Form */}

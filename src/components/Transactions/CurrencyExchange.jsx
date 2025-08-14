@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Info, Minus, ChevronDown } from "lucide-react";
 
+import image from "./../../assets/image-1.png";
 const FlagIcon = ({ countryCode, className = "" }) => {
   return (
     <img
@@ -55,7 +56,7 @@ const CurrencyExchange = ({ setStep }) => {
       <div className="flex flex-col lg:flex-row">
         {/* Left side - Illustration */}
         <div className="hidden lg:flex lg:w-1/2 p-8 items-center justify-center">
-          <img src="./src/assets/image-1.png" alt="" />
+          <img src={image} alt="" />
         </div>
 
         {/* Right side - Form */}
