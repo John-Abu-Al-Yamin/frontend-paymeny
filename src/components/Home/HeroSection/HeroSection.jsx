@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../Header/Navbar";
 import { Repeat2 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const currencies = [
   { value: "USD", label: "الدولار الأمريكي", flag: "🇺🇸" },
@@ -101,10 +102,10 @@ const HeroSection = () => {
 
             {/* زر التحويل */}
             <div className="mt-6">
-              <button className="w-full bg-[#c5b384] text-white font-bold py-4 rounded-lg flex items-center justify-center gap-2 text-lg transition-all duration-300 hover:bg-[#b49f65] focus:outline-none focus:ring-2 focus:ring-[#B49F65]/50">
+              <Link to="/transactions" className="w-full bg-[#c5b384] text-white font-bold py-4 rounded-lg flex items-center justify-center gap-2 text-lg transition-all duration-300 hover:bg-[#b49f65] focus:outline-none focus:ring-2 focus:ring-[#B49F65]/50">
                 <Repeat2 className="w-6 h-6" />
                 <span>حوّل العملة</span>
-              </button>
+              </Link>
             </div>
 
             <div className="mt-4 text-center text-xs text-gray-500">

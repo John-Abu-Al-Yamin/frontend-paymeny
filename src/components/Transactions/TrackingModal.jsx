@@ -1,4 +1,5 @@
 import { X, ArrowUp, Check, Clock } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function TrackingModal({ isOpen, onClose }) {
   if (!isOpen) return null;
@@ -122,7 +123,7 @@ export function TrackingModal({ isOpen, onClose }) {
           onClick={onClose}
           className="bg-[#B49F65] w-full hover:bg-[#A08B5A] text-white px-12 py-3 rounded-lg font-medium transition-colors duration-200"
         >
-          انتقل إلى لوحة التحكم
+          <Link to="/dashboard-user">انتقل إلى لوحة التحكم</Link>
         </button>
       </div>
     </div>
